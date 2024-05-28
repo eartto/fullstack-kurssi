@@ -1,0 +1,7 @@
+POST https://puhelinluettelo-8lx6.onrender.com/api/persons
+content-type: application/json
+
+{
+    "name": "Mr X",
+    "number": "69420666"
+}

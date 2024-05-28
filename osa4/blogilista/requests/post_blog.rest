@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJvdXJib24iLCJpZCI6IjY1Zjk5NTU5Y2VhODhjOGIwNDUzM2NjYyIsImlhdCI6MTcxMDg2NTg4OH0.OQ23r1bAcoorCCqvL0GWAzo5He95lrhMdpwtbLH1adI
+
+{
+    "title": "bloggausblogi",
+    "author": "Blogi Bloggaaja",
+    "url": "blogiblogspot.com/blogi",
+    "userId": "65f99559cea88c8b04533ccc",
+    "likes": 1
+}
