@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/patients
+Content-type: application/json
+
+{
+    "name": "Colin Robinson",
+    "dateOfBirth": "unknown",
+    "gender": "male",
+    "occupation": "accountant"
+}
