@@ -1,0 +1,21 @@
+Script started on 2025-07-18 14:36:01+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ [7msudo docker container run -[27m[7mi[27m[7mt ubuntu bash[27m[A]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ sudo docker container run -it ubuntu bash
+[?2004l[sudo] password for eartto: 
+[?2004h]0;root@f17ca86d5d5a: /root@f17ca86d5d5a:/# cd usr/src/
+[?2004l[?2004h]0;root@f17ca86d5d5a: /usr/srcroot@f17ca86d5d5a:/usr/src# mkdir app
+[?2004l[?2004h]0;root@f17ca86d5d5a: /usr/srcroot@f17ca86d5d5a:/usr/src# cd app/
+[?2004l[?2004h]0;root@f17ca86d5d5a: /usr/src/approot@f17ca86d5d5a:/usr/src/app# [7msudo docker container run -it ubuntu bash[27m                                         [7mecho index > index.js[27mecho index > index.js
+[?2004l[?2004h]0;root@f17ca86d5d5a: /usr/src/approot@f17ca86d5d5a:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@f17ca86d5d5a: /usr/src/approot@f17ca86d5d5a:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ ls
+[?2004lexercise12_1.txt  typescript
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ mv typescript [7mexercise12_1.[27m[7mt[27m[7mxt[27m[A]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cexercise12_1.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.tx[1Pt[A]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.txt[A]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ ls
+[?2004lexercise12_1.txt  exercise12_2.txt
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ [?2004l
+exit
+
+Script done on 2025-07-18 14:38:22+03:00 [COMMAND_EXIT_CODE="0"]

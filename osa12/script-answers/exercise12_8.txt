@@ -1,0 +1,107 @@
+Script started on 2025-07-30 14:04:53+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ exitsudo docker container start mongo[A]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo docker start e93
+[?2004l[sudo] password for eartto: 
+e93
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ sudo docker exec -it e93 ba sh
+[?2004l[?2004hroot@e93d4f406648:/# [7mmongosh[27mmongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6889fca0bcf5d15f2589b03c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.6[0m
+Using MongoDB:		8.0.12
+[1m[33mUsing Mongosh[0m:		2.5.6
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command listDatabases requires authentication
+[1G[0Jtest> [7Gexit
+[?2004l[?2004hroot@e93d4f406648:/# mongosh -u  [7m-u root -p example[27m-u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6889fd3594d191ad5589b03c
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.6[0m
+Using MongoDB:		8.0.12
+[1m[33mUsing Mongosh[0m:		2.5.6
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2025-07-30T11:05:17.330+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-07-30T11:05:17.788+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-07-30T11:05:17.788+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2025-07-30T11:05:17.788+00:00: We suggest setting the contents of sysfsFile to 0.
+   2025-07-30T11:05:17.788+00:00: vm.max_map_count is too low
+   2025-07-30T11:05:17.788+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         72.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[1G[0J... [5G
+[
+  {
+    _id: ObjectId([32m'688746f0e3c9aed88889b03e'[39m),
+    text: [32m'What containers 2'[39m,
+    done: [33mtrue[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.collection.insertOne(
+[1G[0J... [5G    <d[36mdo[39mdocumen[36mdocument[39m>,
+[1G[0J... [5G    {
+[1G[0J... [5G      writeConcern: <document[36mdocument[39m>
+[1G[0J... [5G    }
+[1G[0J... [5G)[1D[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1C[1G[0J... )[6G[1G[0J... )[6G[1D[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J... )[5G[1G[0J...     }[10G[1G[0J...       writeConcern: <[36mdocument[39m>[35G[1G[0J...     {[10G[1G[0J...     <[36mdocument[39m>,[20G[1G[0J... db.collection.insertOne([29G[1G[0J...     <[36mdocument[39m>,[20G[1G[0J...     {[10G[1G[0J...       writeConcern: <[36mdocument[39m>[35G[1G[0J...     }[10G[1G[0J... [5G[1G[0J...     }[10G[1G[0J...       writeConcern: <[36mdocument[39m>[35G[1G[0J...     {[10G[1G[0J...     <[36mdocument[39m>,[20G[1G[0J... db.collection.insertOne([29G[1G[0J... db.todos.find({})[22G[1G[0J... show collections[21G[1G[0J... use the_database[21G[1G[0J... show dbs[13G[1G[0J... exit[9G[1G[0J... show dbs[13G[1G[0J... [5Gaaa[1G[0J... aa[7G[1G[0J... a[6G[1G[0J... [5Gexit
+Uncaught:
+[1m[31mSyntaxError[0m: Support for the experimental syntax 'jsx' isn't currently enabled (2:5):
+
+[0m [90m 1 |[39m db[33m.[39mcollection[33m.[39minsertOne(
+[31m[1m>[22m[39m[90m 2 |[39m     [33m<[39m[33mdocument[39m[33m>[39m[33m,[39m
+ [90m   |[39m     [31m[1m^[22m[39m
+ [90m 3 |[39m     {
+ [90m 4 |[39m       writeConcern[33m:[39m [33m<[39m[33mdocument[39m[33m>[39m
+ [90m 5 |[39m     }[0m
+
+Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=<name of the input file> <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+
+[1G[0Jthe_database> [15Gdb.todos.insertOne( [1G[0Jthe_database> db.todos.insertOne([34G)[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m)[34G[1G[0Jthe_database> db.todos.insertOne[44m([49m{)[35G[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1C[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1G[0Jthe_database> db.todos.insertOne([44m{[49mt})[36G[1G[0Jthe_database> db.todos.insertOne([44m{[49mte})[37G[1G[0Jthe_database> db.todos.insertOne([44m{[49mtex})[38G[1G[0Jthe_database> db.todos.insertOne([44m{[49mtext})[39G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:})[40G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: })[41G[1D[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: })[40G[1C[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: })[41G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"})[39m[42G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"I})[39m[43G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"In})[39m[44G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Inc})[39m[45G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Incr})[39m[46G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Incre})[39m[47G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increa})[39m[48G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increas})[39m[49G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase})[39m[50G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase })[39m[51G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase t})[39m[52G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase th})[39m[53G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the})[39m[54G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the })[39m[55G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the n})[39m[56G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the nu})[39m[57G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the num})[39m[58G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the numb})[39m[59G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the numbe})[39m[60G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number})[39m[61G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number })[39m[62G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number o})[39m[63G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of})[39m[64G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of })[39m[65G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of t})[39m[66G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of to})[39m[67G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of too})[39m[68G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tool})[39m[69G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools})[39m[70G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools })[39m[71G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools i})[39m[72G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in})[39m[73G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in })[39m[74G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in m})[39m[75G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my})[39m[76G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my })[39m[77G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my t})[39m[78G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my to})[39m [79G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my too})[39m[80G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool})[39m[1G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool })[39m[2G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool b})[39m[3G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool be})[39m[4G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool bel})[39m[5G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt})[39m[6G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m})[7G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m,})[8G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, })[9G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, d})[10G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [36mdo[39m})[11G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, don})[12G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, done})[13G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m:})[14G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: })[15G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: f})[16G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: fa})[17G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: fal})[18G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: fals})[19G[1A[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[20G[1C[1A[1G[0Jthe_database> db.todos.insertOne[44m([49m{[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[21G[1C[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[22G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'6889fe8b94d191ad5589b03d'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[22G[1A[1G[0Jthe_database> exit[19G[1G[0Jthe_database>     }[20G[1G[0Jthe_database>       writeConcern: <[36mdocument[39m>[45G[1G[0Jthe_database>     {[20G[1G[0Jthe_database>     <[36mdocument[39m>,[30G[1G[0Jthe_database> db.collection.insertOne([39G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'688746f0e3c9aed88889b03e'[39m),
+    text: [32m'What containers 2'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'6889fe8b94d191ad5589b03d'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l[?2004hroot@e93d4f406648:/# exit
+[?2004lexit
+[?2004h]0;eartto@lx1-fuxi152: ~/fullstack/osa12/script-answers[01;32meartto@lx1-fuxi152[00m:[01;34m~/fullstack/osa12/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2025-07-30 14:15:40+03:00 [COMMAND_EXIT_CODE="0"]
